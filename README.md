@@ -1,50 +1,58 @@
-# Welcome to your Expo app 👋
+# Clube Poliglota App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Esse é um aplicativo em etapa de desenvolvimento,  para avaliação do módulo de mobile do Curso Técnico de Informatica para Web no Senac Portão, Curitiba.
 
-## Get started
+## Guia de Instalação e Uso  
 
-1. Install dependencies
+1. Comece com a instalação do expo 
 
    ```bash
-   npm install
+    npx create-expo-app@latest
+   ```
+1.1. Navegue  para a pasta do projeto
+   ```bash
+    cd/PoliglotaApp
+   ```
+   
+## Resete o projeto
+
+execute:
+
+```bash
+npm run reset-project
+```
+Esse comando moverá o código inicial para o diretório **app-example** e criará um diretório **app** em branco no qual você poderá começar a desenvolver.
+
+## Instale as dependências
+   ```bash
+    npm install   @react-navigation/native  @react-navigation/bottom-tabs @react-navigation/drawer @react-navigation/native-stack react-native-screens react-native-safe-area-context
+
+   ```
+   e então instale o  react-native-gesture-handler
+   ```bash
+    npx expo install react-native-gesture-handler react-native-reanimated
    ```
 
-2. Start the app
+2. Rodar o app
 
    ```bash
     npx expo start
    ```
 
-In the output, you'll find options to open the app in a
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## OBS
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Voce pode visualizar esse projeto no seu navegador instalando:
 
-## Get a fresh project
+   ```bash
+    npx expo install react-native-web react-dom @expo/metro-runtime
+   ```
+e então execute o comando 
+   ```bash
+    npm run web
+   ```   
+ou ainda no seu aparelho celular usando o app auxiliar Expo Go e escaneando o QR Code exibido no seu terminal.
 
-When you're ready, run:
+## Licença
 
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+[MIT](https://choosealicense.com/licenses/mit/)
