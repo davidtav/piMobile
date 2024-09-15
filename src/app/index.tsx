@@ -1,8 +1,8 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import Routes from "../src/routes/Routes";
-import Start from "../src/Screens/Start";
-import Login from "../src/Screens/Login";
-import Register from "../src/Screens/Register";
+import Routes from "../routes/Routes";
+import Start from "../Screens/Start";
+import Login from "../Screens/Login";
+import Register from "../Screens/Register";
  
 export default function Index() {
   const Stack = createNativeStackNavigator();
