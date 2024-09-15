@@ -2,7 +2,11 @@ import React from "react";
 import { View, Text, Image } from "react-native";
 import { Ionicons, Feather, AntDesign } from "@expo/vector-icons";
 
-export default function HomeListItem({post}) {
+type HomeListItemProps={
+  post:any;
+} 
+
+export default function HomeListItem({post}:HomeListItemProps) {
   return (
     <View className="bg-white">
       {/* Header Post */}
@@ -19,7 +23,7 @@ export default function HomeListItem({post}) {
           className="w-full aspect-[4/3]"
         />
       </View>
-      <Text>{post.caption}</Text>
+      <Text className="p-1 m-1 text-justify">{post.caption}</Text>
       {/* Footer Post - Icons */}
       <View className="flex-row gap-3 p-3">
         <AntDesign name="hearto" size={20} />
