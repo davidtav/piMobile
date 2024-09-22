@@ -2,7 +2,7 @@ import {createBottomTabNavigator} from "@react-navigation/bottom-tabs"
 import {Feather} from "@expo/vector-icons"
 import Home from "../Pages/Home"
 import Posts from "../Pages/Posts"
-import Friends from "../Pages/Friends"
+import Profile from "../Pages/Profile"
 const Tab = createBottomTabNavigator();
 
 export default function TabRoutes() {
@@ -26,8 +26,8 @@ export default function TabRoutes() {
                 )
              }}/>
             <Tab.Screen 
-             name="Friends"
-             component={Friends}
+             name="Profile"
+             component={Profile}
              options={{
                 tabBarIcon:({color,size})=>(
                     <Feather name="user" color={color} size={size}/>
