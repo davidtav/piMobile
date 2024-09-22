@@ -7,6 +7,7 @@ const post1 = posts[0];
 
 export default function Home() {
   return (
+    
     <FlatList
     data={posts}
     renderItem={({ item }) => <HomeListItem post={item} />}

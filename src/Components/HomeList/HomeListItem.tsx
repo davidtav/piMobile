@@ -8,16 +8,16 @@ type HomeListItemProps={
 
 export default function HomeListItem({post}:HomeListItemProps) {
   return (
-    <View className="bg-white">
+    <View className="bg-white">       
       {/* Header Post */}
-      <View className="p-3 flex-row items-center gap-2">
+      <View className="p-3 flex-row items-center gap-2">        
         <Image
           source={{ uri: post.user.image_url }}
           className="w-12 aspect-square rounded-full"
         />
         <Text className="font-semibold">{post.user.username}</Text>
       </View>
-      <View>
+      <View className="mt-2">
         <Image
           source={{ uri: post.image_url }}
           className="w-full aspect-[4/3]"
@@ -30,7 +30,7 @@ export default function HomeListItem({post}:HomeListItemProps) {
         <Ionicons name="chatbubble-outline" size={20} />
         <Feather name="send" size={20} />
         <Feather name="bookmark" size={20} className="ml-auto" />
-      </View>
+        </View>
     </View>
   );
 }
