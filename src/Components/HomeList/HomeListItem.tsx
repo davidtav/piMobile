@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, Image } from "react-native";
+import { View, Text, Image,StyleSheet } from "react-native";
 import { Ionicons, Feather, AntDesign } from "@expo/vector-icons";
 
 type HomeListItemProps={
@@ -29,7 +29,7 @@ export default function HomeListItem({post}:HomeListItemProps) {
         <AntDesign name="hearto" size={20} />
         <Ionicons name="chatbubble-outline" size={20} />
         <Feather name="send" size={20} />
-        <Feather name="bookmark" size={20} className="ml-auto" />
+        <Feather name="bookmark" size={20} style={{marginLeft:240}} />
         </View>
     </View>
   );
