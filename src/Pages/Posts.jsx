@@ -5,7 +5,7 @@ import * as ImagePicker from "expo-image-picker";
 
 export default function Posts() {
   const [caption, setCaption] = useState("");
-  const [image, setImage] = (useState < string) | (null > null);
+  const [image, setImage] = useState(null);
 
   useEffect(() => {
     if (!image) {
@@ -55,5 +55,5 @@ export default function Posts() {
         <Button nome="share"/>
       </View>
     </View>
-  );
+  )
 }
