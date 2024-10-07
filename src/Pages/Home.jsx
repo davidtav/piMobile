@@ -7,12 +7,16 @@ const post1 = posts[0];
 
 export default function Home() {
   return (
-    
     <FlatList
     data={posts}
     renderItem={({ item }) => <HomeListItem post={item} />}
-    contentContainerStyle={{ gap: 10, maxWidth: 512,alignSelf:"center", width: "100%" }}
+    contentContainerStyle={{ gap: 10, maxWidth: 600,alignSelf:"center", width: "100%" }}
     showsVerticalScrollIndicator={false}
   />
   )
 }
+
+/**
+ * ///////////////////////////////////////////////////
+ */
+
