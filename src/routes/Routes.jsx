@@ -1,9 +1,5 @@
-import TabRoutes from "../routes/Tab.routes"
-//import DrawerRoutes from "../routes/Drawer.routes"
+import TabRoutes from './Tab.routes';
+
 export default function Routes() {
-  return (
-    <>
-      <TabRoutes/>
-    </>
-  )
+   return <TabRoutes /> ;
 }
