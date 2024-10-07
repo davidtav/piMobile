@@ -5,6 +5,7 @@ const StartStyle = StyleSheet.create({
       flex: 1,
       alignItems: "center",
       justifyContent: "center",
+      gap:150
     },
     image: {
       height: 150,
@@ -19,7 +20,8 @@ const StartStyle = StyleSheet.create({
       resizeMode: 'cover', 
       justifyContent: 'center',
       width:"100%",
-      height:"100%"
+      height:"100%",
+      backgroundColor:"white"
     },
   });
   
