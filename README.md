@@ -4,71 +4,36 @@ Esse é um aplicativo em etapa de desenvolvimento,  para avaliação do módulo 
 
 ## Guia de Instalação e Uso  
 
-1. Comece com a instalação do expo 
+ Comece clonando o projeto
 
    ```bash
-    npx create-expo-app@latest
+    git clone https://github.com/davidtav/piMobile.git
    ```
-1.1. Navegue  para a pasta do projeto
+
+## Resete o projeto
+  Navegue  para a pasta do projeto
    ```bash
-    cd/PoliglotaApp
+    cd/piMobile
    ```
    
-## Resete o projeto
-
-execute:
-
-```bash
-npm run reset-project
-```
-Esse comando moverá o código inicial para o diretório **app-example** e criará um diretório **app** em branco no qual você poderá começar a desenvolver.
 
 ## Instale as dependências
    ```bash
-    npm install   @react-navigation/native  @react-navigation/bottom-tabs @react-navigation/drawer @react-navigation/native-stack react-native-screens react-native-safe-area-context
-
+    npm install   
    ```
-   e então instale o  react-native-gesture-handler
-   ```bash
-    npx expo install react-native-gesture-handler react-native-reanimated
-   ```
-## Após essas instalações Iniciais deve-se apagar algumas pastas a seguir:
-Scripts/
-Hooks/
-Constants/
-Componentes/
-app-example/
 
-## E então instalar as demais dependências de acordo com as orientações abaixo:
+ ## Após essas instalações Iniciais deve-se configurar a conta no Firebase e na API da OpenWeatherMap:
 
-deve se  instalar o NativeWind  seguindo as orientações do site:
-https://www.nativewind.dev/v4/getting-started/expo-router
 
-deve se instalar o Expo ImagePicker seguindo as orientações do site:
-https://docs.expo.dev/versions/latest/sdk/imagepicker/
-
-deve se instalar o Cloudinary seguindo as orientações do site:
-https://cloudinary.com/documentation/react_native_integration
-
-2. Rodar o app
+## E então Rodar o app:
 
    ```bash
     npx expo start
    ```
 
 
-## OBS
+## OBS : o recomendado para esse projeto e executá-lo em um ambiente mobile como o Expo Go ou o Android Studio para melhor aproveitamento
 
-Voce pode visualizar esse projeto no seu navegador instalando:
-
-   ```bash
-    npx expo install react-native-web react-dom @expo/metro-runtime
-   ```
-e então execute o comando 
-   ```bash
-    npm run web
-   ```   
-ou ainda no seu aparelho celular usando o app auxiliar Expo Go e escaneando o QR Code exibido no seu terminal.
 
 ## Licença
 
