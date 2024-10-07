@@ -32,6 +32,23 @@ Esse comando moverá o código inicial para o diretório **app-example** e criar
    ```bash
     npx expo install react-native-gesture-handler react-native-reanimated
    ```
+## Após essas instalações Iniciais deve-se apagar algumas pastas a seguir:
+Scripts/
+Hooks/
+Constants/
+Componentes/
+app-example/
+
+## E então instalar as demais dependências de acordo com as orientações abaixo:
+
+deve se  instalar o NativeWind  seguindo as orientações do site:
+https://www.nativewind.dev/v4/getting-started/expo-router
+
+deve se instalar o Expo ImagePicker seguindo as orientações do site:
+https://docs.expo.dev/versions/latest/sdk/imagepicker/
+
+deve se instalar o Cloudinary seguindo as orientações do site:
+https://cloudinary.com/documentation/react_native_integration
 
 2. Rodar o app
 
